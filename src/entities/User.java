@@ -1,23 +1,29 @@
 package entities;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+
 
 @Entity
 @Table(name="people")
 public class User {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id", unique=true, nullable = false)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Column(name="user_id", unique=true, nullable = false)
     private Long id;
     
     @Column(name="username", nullable = true)
-    private String username; 
+    private String username;
     
     @Column(name="firstname", nullable = true)
     private String firstname;
@@ -29,21 +35,16 @@ public class User {
     private String email;
       
     @Column(name="password", nullable = false)
-    private String password;    
+    private String password;
+    
+    @OneToMany(mappedBy="user", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Transaction> transactions;
     
     public User() {}
     
     public User(String email2, String password2) {
 		this.email = email2;
 		this.password = password2;		
-	}
-    
-  	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
 	}
 
 	public String getUserName() {
@@ -85,5 +86,14 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
     
 }

@@ -1,5 +1,7 @@
 package dto;
 
+
+
 public class UserDTO {
 
 	private Long id;
@@ -12,8 +14,8 @@ public class UserDTO {
 	public Long getId() {
 		return id;
 	}
-	public void setId(Long id) {
-		this.id = id;
+	public void setId(Long id2) {
+		this.id = id2;
 	}
 	public String getEmail() {
 		return email;
@@ -45,5 +47,6 @@ public class UserDTO {
 	public void setLastname(String lastname) {
 		this.lastname = lastname;
 	}
+	
     
 }

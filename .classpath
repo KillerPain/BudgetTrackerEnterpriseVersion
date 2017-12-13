@@ -11,5 +11,11 @@
 	<classpathentry kind="lib" path="D:/Programs/wildfly-10.1.0.Final/modules/system/layers/base/javax/persistence/api/main/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
 	<classpathentry kind="lib" path="D:/Programs/wildfly-10.1.0.Final/modules/system/layers/base/javax/ejb/api/main/jboss-ejb-api_3.2_spec-1.0.0.Final.jar"/>
 	<classpathentry kind="lib" path="D:/Programs/wildfly-10.1.0.Final/modules/system/layers/base/javax/ws/rs/api/main/jboss-jaxrs-api_2.0_spec-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Programs/wildfly-10.1.0.Final/modules/system/layers/base/javax/servlet/api/main/jboss-servlet-api_3.1_spec-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Programs/wildfly-10.1.0.Final/modules/system/layers/base/javax/inject/api/main/javax.inject-1.jar"/>
+	<classpathentry kind="lib" path="D:/Programs/wildfly-10.1.0.Final/modules/system/layers/base/javax/mail/api/main/javax.mail-1.5.5.jar"/>
+	<classpathentry kind="lib" path="D:/Programs/wildfly-10.1.0.Final/modules/system/layers/base/javax/enterprise/api/main/cdi-api-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Programs/wildfly-10.1.0.Final/modules/system/layers/base/javax/jms/api/main/jboss-jms-api_2.0_spec-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Programs/wildfly-10.1.0.Final/modules/system/layers/base/org/jboss/logging/main/jboss-logging-3.3.0.Final.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
